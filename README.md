@@ -17,7 +17,9 @@ Requirements:
 Steps for compiling and running the code:
 
 To run the server:
+
 Open a terminal in the correct directory and execute the below commands:
+
 - erl -sname server
 - c(startmodule).
 - c(userregistration).
@@ -35,7 +37,8 @@ To run the clients:
 - startmodule:sendTweet(). (To send the tweet to the user)
 - startmodule:signInOut(). (To sign out the user)
 
-#Architecture:
+Architecture:
+![alt text](https://github.com/RatnaPB/Twitter-Simulation-in-Erlang/blob/main/images/Architecture.png?raw=true)
 
 Program flow:
 
@@ -71,7 +74,9 @@ functionality of twitter.
 
 5. Finally, signout functionality is written in the “signInOut” function. In this function,
 the username of the user is deleted from the persistent term as well as map.
+
 What is working:
+
 This program is executes a Twitter server and simulation of multiple clients over multiple
 terminals. Twitter engine registers the processes/ actors required for all the processes
 to be executed by all the users. Server mainly supports functions like Registering new
@@ -79,3 +84,48 @@ user, sign in of existing users, subscribing to users or hashtags, sending tweet
 mentioning another user using @, searching using particular name or hashtag
 and signing out of users. The same actor is used to serve individual process so that
 congestion is avoided between the users.
+
+
+Program Output:
+
+
+• Registration and Sign in
+
+Registers and sign-in using username and password of a user.
+
+![alt text](https://github.com/RatnaPB/Twitter-Simulation-in-Erlang/blob/main/images/Registration%20and%20Sign%20in.png?raw=true)
+
+
+• Subscribe
+
+Subscriber a particular user, to get tweets from them.
+
+![alt text](https://github.com/RatnaPB/Twitter-Simulation-in-Erlang/blob/main/images/Registration%20and%20Sign%20in.png?raw=true)
+
+
+• User Mentions using @
+
+Can mention any user, subscribed or unsubscribe to in there tweet. And it will be visible to the user mentioned.
+
+![alt text](https://github.com/RatnaPB/Twitter-Simulation-in-Erlang/blob/main/images/Subscribe.png?raw=true)
+
+
+• Querying using hashtags
+
+Displays the lists of tweets conating a particular hashtag
+
+![alt text](https://github.com/RatnaPB/Twitter-Simulation-in-Erlang/blob/main/images/Query%20hashtag.png?raw=true)
+
+
+• Display subscribed tweets to the disconnected/offline clients
+
+Displace tweets to the clients that have been offline using fetchtweetsfromsubscribers()
+
+![alt text](https://github.com/RatnaPB/Twitter-Simulation-in-Erlang/blob/main/images/Offline%20Clients.png?raw=true)
+
+
+• Sign out
+
+Signes out the user.
+
+![alt text](https://github.com/RatnaPB/Twitter-Simulation-in-Erlang/blob/main/images/Sign%20out.png?raw=true)
