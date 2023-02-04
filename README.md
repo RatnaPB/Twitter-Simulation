@@ -1,8 +1,10 @@
 # Twitter-Simulation-in-Erlang
 
+[Demo Link](https://www.youtube.com/watch?v=9AbRnDgBzoM)
+
 Goal:
-To implement a Twitter Clone in Erlang and implement the basic functionalities in Twitter
-using multiple clients using WebSocket interface.
+To implement a Twitter Clone in Erlang and implement the basic functionalities of Twitter
+using multiple clients.
 
 Project Members:
 - Ratna Prabha Bhairagond (UFID – 8827 4983)
@@ -11,8 +13,6 @@ Project Members:
 Requirements:
 - Latest version of Erlang
 - Multicore terminals on the same machine
-
-[Demo Link](https://www.youtube.com/watch?v=9AbRnDgBzoM)
 
 Steps for compiling and running the code:
 
