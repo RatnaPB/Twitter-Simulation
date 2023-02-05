@@ -1,4 +1,4 @@
-# Twitter-Simulation-in-Erlang
+# Twitter Simulation (Erlang)
 
 [Demo Link](https://www.youtube.com/watch?v=9AbRnDgBzoM)
 
